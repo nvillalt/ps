@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   parse_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 17:25:03 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/12/19 13:53:21 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/12/19 21:27:26 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 void	free_params(char **params)
 {
@@ -53,31 +52,6 @@ int	check_num(char **argv)
 		n++;
 	}
 	return (1);
-}
-
-int	rep_stack(t_data **stack)
-{
-	t_data	*aux;
-	t_data	*tmp;
-	int		count;
-
-	count = 0;
-	tmp = *stack;
-	while (tmp->next != *stack)
-	{
-		aux = (*stack)->next;
-		while (aux->next != *stack)
-		{
-			if (aux->value == (*stack)->value)
-			{
-				count++;
-				break ;
-			}
-			aux = aux->next;
-		}
-		tmp = tmp->next;
-	}
-	return (count);
 }
 
 int	rep_params(char **argv)

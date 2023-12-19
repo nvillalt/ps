@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 13:18:21 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/12/19 13:39:11 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/12/19 21:29:03 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int		check_order(t_data **stack_a);
 void	free_params(char **params);
 int		check_num(char **argv);
 int		rep_params(char **argv);
-int	rep_stack(t_data **stack);
+int		check_len(char **params);
 char	*join_params(int argc, char **argv);
 
 // LIST_UTILS FUNCTIONS
@@ -56,6 +56,7 @@ void	free_stack(t_data **head);
 int		check_max(t_data **head);
 int		list_len(t_data **head);
 int		find_min_no_index(t_data **stack_a);
+int		rep_stack(t_data **stack);
 
 void	print_list(t_data **stack_a);
 

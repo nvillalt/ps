@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   print_list.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid>       +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 10:53:56 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/12/19 10:54:06 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/12/19 21:02:08 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
+#include <stdio.h>
 void	print_list(t_data **stack_a)
 {
 	t_data	*temp;

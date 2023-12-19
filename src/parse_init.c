@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parse_init.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 13:28:49 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/12/19 13:54:12 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/12/19 21:55:09 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static char	**get_params(int argc, char **argv)
 	free(str);
 	if (!params)
 		return (NULL);
-	if (!check_num(params) || !rep_params(params))
+	if (!check_num(params) || !rep_params(params) || !check_len(params))
 	{
 		write(2, "Error.\n", 7);
 		free_params(params);
